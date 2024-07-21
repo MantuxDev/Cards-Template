@@ -1,0 +1,88 @@
+:root {
+    --color : #247BA0;
+    --color1 : #85C1E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: white;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(36, 123, 160, 1.5);
+}
+
+.cards img {
+    width: 330px;
+    height: 250px;
+}
+
+.dett{
+    flex-grow: 1; 
+    margin: 20px;
+}
+
+.dett h4{
+    color: #818699;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.dett h3{
+    color: var(--color);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btn a {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background: var(--color1);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.btn a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(36, 123, 160, 0.5);
+    color: var(--color)1;
+    background: white;
+    border: 1px solid var(--color1);
+}
